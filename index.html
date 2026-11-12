@@ -87,6 +87,38 @@ body>*{position:relative;z-index:1}
 .program-grid .program-card{padding:0 0 18px;overflow:hidden;display:flex;flex-direction:column}.program-figure{margin:0 0 14px}.program-photo{display:block;width:100%;height:190px;object-fit:cover}.program-figure figcaption{padding:8px 14px 0;color:var(--muted);font-size:.7rem;line-height:1.45}.program-figure figcaption a{color:var(--g);font-weight:700}.program-card .ic,.program-card h3,.program-card>p{margin-left:18px;margin-right:18px}.program-card .ic{margin-top:0;margin-bottom:6px}.program-card h3{margin-bottom:8px}.program-card>p{margin-top:0}.photo-note{font-size:.86rem;color:var(--muted);font-style:italic;margin-top:-4px;margin-bottom:18px}
 @media(max-width:650px){.program-photo{height:210px}}
 
+
+/* CYLO digital refresh: readable Times New Roman typography, contrast, and logo visibility */
+:root,:root:not([data-theme="light"]),:root[data-theme="light"],:root[data-theme="dark"]{
+ --bg:#071827;--card:rgba(12,31,49,.94);--ink:#f2f7fb;--muted:#c0d0de;--line:rgba(105,190,207,.28);--g:#5fe0bd;--g2:#82e4d0;--gold:#ffd166;--blue:#69c8ff;color-scheme:dark
+}
+html{scroll-behavior:smooth}
+body{font-family:"Times New Roman",Times,serif!important;font-size:18px;line-height:1.68;color:#f2f7fb;background-color:#071827;background-image:radial-gradient(ellipse at 12% 7%,rgba(31,181,163,.27),transparent 34%),radial-gradient(ellipse at 88% 25%,rgba(35,127,204,.27),transparent 36%),radial-gradient(ellipse at 40% 80%,rgba(26,90,124,.18),transparent 40%),repeating-linear-gradient(0deg,rgba(113,204,225,.035) 0,rgba(113,204,225,.035) 1px,transparent 1px,transparent 42px),repeating-linear-gradient(90deg,rgba(113,204,225,.035) 0,rgba(113,204,225,.035) 1px,transparent 1px,transparent 42px),linear-gradient(145deg,#071827 0%,#0a2035 48%,#071827 100%);background-attachment:fixed}
+body:before{background-size:min(78vw,760px);background-position:center center;opacity:.17;filter:saturate(1.12);mix-blend-mode:screen}
+nav{background:rgba(5,19,33,.88);border-bottom:1px solid rgba(95,224,189,.32);box-shadow:0 8px 26px rgba(0,0,0,.22)}
+.lg{font-family:"Times New Roman",Times,serif!important;color:#f5fbff;letter-spacing:.015em}
+.lg img{width:54px;height:54px;flex:0 0 54px;object-fit:contain;padding:3px;border-radius:50%;background:#f8fcff;border:2px solid #5fe0bd;box-shadow:0 0 0 4px rgba(95,224,189,.14),0 0 22px rgba(95,224,189,.38)}
+h1,h2,h3{font-family:"Times New Roman",Times,serif!important;color:#f4f9ff}
+h1{letter-spacing:.005em;text-shadow:0 3px 24px rgba(0,0,0,.36)}
+h2{color:#e9f8ff}
+h3{color:#f1fbff}
+.hero{background:radial-gradient(ellipse at 82% 5%,rgba(39,160,204,.30),transparent 38%),radial-gradient(ellipse at 10% 100%,rgba(47,183,145,.22),transparent 38%),linear-gradient(135deg,rgba(7,24,39,.97),rgba(10,43,62,.94) 52%,rgba(8,29,49,.97));border-bottom:1px solid rgba(95,224,189,.22)}
+.hero p,.hero .sub,.photo-note{color:#d1e0eb}
+.c{background:linear-gradient(145deg,rgba(14,39,59,.95),rgba(10,29,47,.94));border:1px solid rgba(108,201,218,.30);box-shadow:0 12px 30px rgba(0,0,0,.20);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.c p{color:#d6e2ec}
+.program-card h3{color:#effbff}
+.program-figure{margin-bottom:14px}
+.program-photo{border-bottom:1px solid rgba(95,224,189,.35)}
+.links a,nav a:not(.lg){color:#d6e8f2}
+.links a:hover,nav a:not(.lg):hover{color:#73e4ca}
+.eyebrow,.tag{color:#81ecd3}
+.chips span{background:rgba(16,44,65,.88);color:#eff8fc;border-color:rgba(95,224,189,.25)}
+footer{color:#c3d2de}
+.credits-link{display:inline-block;margin-left:10px;color:#73e4ca;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.call{background:linear-gradient(135deg,#19a987,#1379a5);box-shadow:0 9px 28px rgba(16,161,160,.35)}
+:focus-visible{outline:3px solid #ffd166;outline-offset:3px}
+@media(max-width:650px){.lg img{width:42px;height:42px;flex-basis:42px}.lg{max-width:100%;font-size:.94rem}body:before{background-size:min(98vw,520px);opacity:.14}}
+
 </style>
 </head>
 <body>
@@ -119,11 +151,11 @@ body>*{position:relative;z-index:1}
 
 <section id="programs"><div class="w"><h2>What we do</h2><p class="sub">Five main areas of operation.</p><p class="photo-note">Illustrative documentary photographs only. They do not represent CYLO activities or beneficiaries.</p>
 <div class="grid program-grid">
-<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="child-protection.jpg" alt="children at an African Child Day event" loading="lazy"><figcaption>Children participating in an African Child Day event in Kismayo, Somalia, photographed by AMISOM Public Information. <a href="https://commons.wikimedia.org/wiki/File:2016_16_African_Child_Day_1-3_(27110190104).jpg" target="_blank" rel="noopener">Photo source</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">AMISOM Public Information · CC0</a></figcaption></figure><div class="ic">🛡️</div><h3>Child Protection and Welfare</h3><p>Working with local authorities, schools and community leaders to promote child safety and rights, and protection from abuse, neglect, violence and exploitation.</p></div>
-<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="education-support.jpg" alt="teacher helping children learn outdoors" loading="lazy"><figcaption>A teacher teaching children outdoors in Malawi, photographed by Tamandani-Lungu. <a href="https://commons.wikimedia.org/wiki/File:African_teacher_teaching_under_a_tree.jpg" target="_blank" rel="noopener">Photo source</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Tamandani-Lungu · CC BY-SA 4.0</a></figcaption></figure><div class="ic">📚</div><h3>Education Support</h3><p>Educational mentoring, school support initiatives, awareness campaigns and promotion of inclusive education opportunities.</p></div>
-<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="youth-entrepreneurship.jpg" alt="youth entrepreneurship training in Dar es Salaam" loading="lazy"><figcaption>Youth entrepreneurship skills training in Dar es Salaam, Tanzania, photographed by Botea designs. <a href="https://commons.wikimedia.org/wiki/File:The_Upcoming_youth_entrepreneurs_in_Tanzania.jpg" target="_blank" rel="noopener">Photo source</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Botea designs · CC BY-SA 4.0</a></figcaption></figure><div class="ic">🚀</div><h3>Youth Empowerment and Entrepreneurship</h3><p>Life skills training, entrepreneurship education, career guidance and capacity building so youth become self-reliant and productive.</p></div>
-<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="family-community.jpg" alt="family in a village in Ghana" loading="lazy"><figcaption>A family in a village in Tamale, Ghana, photographed by Kwameghana. <a href="https://commons.wikimedia.org/wiki/File:A_family_in_a_village.jpg" target="_blank" rel="noopener">Photo source</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Kwameghana · CC BY-SA 4.0</a></figcaption></figure><div class="ic">👨‍👩‍👧</div><h3>Family and Community Support</h3><p>Seminars, counselling and awareness programs promoting responsible parenting and stronger family relationships.</p></div>
-<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="awareness-advocacy.jpg" alt="community gathering in Uganda" loading="lazy"><figcaption>A community gathering in Uganda, photographed by Gaigiel. <a href="https://commons.wikimedia.org/wiki/File:Photo_of_different_family_gathering_as_good_day_for_sda_members._Jpg.jpg" target="_blank" rel="noopener">Photo source</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Gaigiel · CC BY-SA 4.0</a></figcaption></figure><div class="ic">📣</div><h3>Awareness and Advocacy</h3><p>Campaigns and educational programs on gender equality, health education and social responsibility.</p></div>
+<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="child-protection.jpg" alt="children at an African Child Day event" loading="lazy"></figure><div class="ic">🛡️</div><h3>Child Protection and Welfare</h3><p>Working with local authorities, schools and community leaders to promote child safety and rights, and protection from abuse, neglect, violence and exploitation.</p></div>
+<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="education-support.jpg" alt="teacher helping children learn outdoors" loading="lazy"></figure><div class="ic">📚</div><h3>Education Support</h3><p>Educational mentoring, school support initiatives, awareness campaigns and promotion of inclusive education opportunities.</p></div>
+<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="youth-entrepreneurship.jpg" alt="youth entrepreneurship training in Dar es Salaam" loading="lazy"></figure><div class="ic">🚀</div><h3>Youth Empowerment and Entrepreneurship</h3><p>Life skills training, entrepreneurship education, career guidance and capacity building so youth become self-reliant and productive.</p></div>
+<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="family-community.jpg" alt="family in a village in Ghana" loading="lazy"></figure><div class="ic">👨‍👩‍👧</div><h3>Family and Community Support</h3><p>Seminars, counselling and awareness programs promoting responsible parenting and stronger family relationships.</p></div>
+<div class="c program-card"><figure class="program-figure"><img class="program-photo" src="awareness-advocacy.jpg" alt="community gathering in Uganda" loading="lazy"></figure><div class="ic">📣</div><h3>Awareness and Advocacy</h3><p>Campaigns and educational programs on gender equality, health education and social responsibility.</p></div>
 </div></div></section>
 
 <section><div class="w two">
@@ -159,7 +191,7 @@ body>*{position:relative;z-index:1}
 <section id="contact"><div class="w"><h2>Contact us</h2><p class="sub">Children and Youth Life Zone Organization (CYLO)</p>
 <div class="c ct"><div>📍 Dar es Salaam, Tanzania</div><div>📞 <a href="tel:+255746443735">0746 443 735</a></div><div>✉️ <a href="mailto:cylo@organization.tz">cylo@organization.tz</a></div><div>🌐 www.cylo.or.tz</div></div></div></section>
 
-<footer><div class="w">&copy; 2026 CYLO &ndash; Children and Youth Life Zone Organization. Empowering youth lives, building a better future.</div></footer>
+<footer><div class="w">&copy; 2026 CYLO &ndash; Children and Youth Life Zone Organization. Empowering youth lives, building a better future. <a href="PHOTO-CREDITS.md" class="credits-link">Photo credits &amp; licenses</a></div></footer>
 <a class="call" href="tel:+255746443735">📞 Call us</a>
 </body>
 </html>
